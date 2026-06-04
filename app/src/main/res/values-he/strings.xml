@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App name -->
+    <string name="app_name">TabSSH</string>
+    <string name="app_name_debug">TabSSH דיבאג</string>
+
+    <!-- Main activity -->
+    <string name="main_activity_title">TabSSH</string>
+    <string name="quick_connect_title">חיבור מהיר</string>
+    <string name="frequently_used_title">בשימוש תדיר</string>
+    <string name="connections_title">My server</string>
+    <string name="host_hint">שם מארח (Host) או כתובת IP</string>
+    <string name="port_hint">פורט (ברירת מחדל: 22)</string>
+    <string name="username_hint">שם משתמש</string>
+    <string name="connect_button">התחבר</string>
+    <string name="add_connection">הוספת שרת</string>
+    <string name="search_connections">חיפוש שרתים…</string>
+    <string name="no_connections_title">אין עדיין שרתים</string>
+    <string name="no_connections_message">הוסף את שרת ה-SSH הראשון שלך כדי להתחיל.\n\nהקש על כפתור ה-+ כדי ליצור חיבור חדש.</string>
+
+    <!-- Connection management -->
+    <string name="connection_name_hint">שם החיבור (למשל, \"ה-VPS שלי\")</string>
+    <string name="connection_host_hint">שם מארח או כתובת IP</string>
+    <string name="connection_port_hint">22</string>
+    <string name="connection_username_hint">שם משתמש</string>
+    <string name="save_connection">שמור</string>
+    <string name="edit_connection">עריכת חיבור</string>
+    <string name="delete_connection">מחיקת חיבור</string>
+    <string name="duplicate_connection">שכפול חיבור</string>
+    <string name="connection_saved">החיבור נשמר בהצלחה</string>
+    <string name="connection_deleted">החיבור נמחק</string>
+    
+    <!-- Authentication -->
+    <string name="auth_type_password">סיסמה</string>
+    <string name="auth_type_public_key">מפתח ציבורי (מפתח SSH)</string>
+    <string name="auth_type_keyboard_interactive">מקלדת אינטראקטיבית</string>
+    <string name="password_hint">סיסמה</string>
+    <string name="select_key">בחירת מפתח SSH</string>
+    <string name="generate_key">יצירת מפתח חדש</string>
+    <string name="import_key">ייבוא מפתח</string>
+    
+    <!-- Terminal activity -->
+    <string name="terminal_activity_title">Terminal</string>
+    <string name="new_tab">לשונית חדשה</string>
+    <string name="close_tab">סגירת לשונית</string>
+    <string name="tab_menu">תפריט לשוניות</string>
+    <string name="function_keys">מקשי פונקציה</string>
+    <string name="show_keyboard">הצג מקלדת</string>
+    <string name="hide_keyboard">הסתר מקלדת</string>
+    <string name="paste">הדבק</string>
+    <string name="copy">העתק</string>
+    <string name="select_all">בחר הכל</string>
+    <string name="open_files">קבצים</string>
+
+    <!-- Accessibility strings -->
+    <string name="accessibility_terminal">טרמינל SSH</string>
+    <string name="accessibility_read_screen">קרא את כל המסך</string>
+    <string name="accessibility_read_line">קרא את השורה הנוכחית</string>
+    <string name="accessibility_scroll_up">גלול למעלה</string>
+    <string name="accessibility_scroll_down">גלול למטה</string>
+    
+    <!-- Connection status -->
+    <string name="status_connecting">מתחבר…</string>
+    <string name="status_connected">מחובר</string>
+    <string name="status_disconnected">מנותק</string>
+    <string name="status_error">שגיאה</string>
+    <string name="status_authenticating">מבצע אימות…</string>
+    
+    <!-- Errors -->
+    <string name="error_connection_failed">ההתחברות נכשלה</string>
+    <string name="error_authentication_failed">האימות נכשל - אנא בדוק את פרטי הגישה</string>
+    <string name="error_host_key_changed">מפתח המארח (Host Key) השתנה!</string>
+    <string name="error_host_key_unknown">מפתח מארח לא מוכר - התחברות ראשונה</string>
+    <string name="error_network_unreachable">הרשת אינה זמינה - אנא בדוק את חיבור האינטרנט שלך</string>
+    <string name="error_connection_timeout">פסק זמן לחיבור - השרת לא הגיב</string>
+    <string name="error_invalid_host">שם מארח או כתובת IP לא תקינים</string>
+    <string name="error_invalid_port">פורט לא תקין (חייב להיות בין 1 ל-65535)</string>
+    <string name="error_permission_denied">הגישה נדחתה - אנא בדוק את פרטי הגישה</string>
+    
+    <!-- Settings -->
+    <string name="settings_title">הגדרות</string>
+    <string name="settings_general">כללי</string>
+    <string name="settings_terminal">טרמינל</string>
+    <string name="settings_security">אבטחה ופרטיות</string>
+    <string name="settings_interface">ממשק</string>
+    <string name="settings_connections">חיבורים</string>
+    <string name="settings_accessibility">נגישות</string>
+    <string name="settings_about">אודות TabSSH</string>
+    
+    <!-- General settings -->
+    <string name="pref_startup_behavior">התנהגות בהפעלה</string>
+    <string name="pref_startup_behavior_summary">מה לעשות כשהאפליקציה נפתחת</string>
+    <string name="pref_auto_backup">גיבוי אוטומטי</string>
+    <string name="pref_auto_backup_summary">גיבוי אוטומטי של חיבורים ומפתחות</string>
+    <string name="pref_language">שפה</string>
+    <string name="pref_language_summary">שפת האפליקציה</string>
+    
+    <!-- Security settings -->
+    <string name="pref_password_storage">אחסון סיסמאות</string>
+    <string name="pref_password_storage_summary">כיצד לאחסן סיסמאות</string>
+    <string name="pref_biometric_auth">אימות ביומטרי</string>
+    <string name="pref_biometric_auth_summary">שימוש בטביעת אצבע או זיהוי פנים</string>
+    <string name="pref_host_key_checking">בדיקת מפתח מארח</string>
+    <string name="pref_host_key_checking_summary">אימות זהות המארח</string>
+    <string name="pref_auto_lock">נעילה אוטומטית</string>
+    <string name="pref_auto_lock_summary">נעילת האפליקציה כאשר היא ברקע</string>
+    <string name="pref_screenshot_protection">אבטחה מפני צילומי מסך</string>
+    <string name="pref_screenshot_protection_summary">מניעת צילומי מסך באפליקציה</string>
+    
+    <!-- Terminal settings -->
+    <string name="pref_theme">עיצוב (Theme)</string>
+    <string name="pref_theme_summary">ערכת צבעים לטרמינל</string>
+    <string name="pref_font_family">פונט (גופן)</string>
+    <string name="pref_font_family_summary">גופן הטרמינל</string>
+    <string name="pref_font_size">גודל פונט</string>
+    <string name="pref_font_size_summary">גודל הטקסט בטרמינל</string>
+    <string name="pref_cursor_style">סגנון סמן</string>
+    <string name="pref_cursor_style_summary">מראה הסמן</string>
+    <string name="pref_scrollback_lines">שורות היסטוריה (Scrollback)</string>
+    <string name="pref_scrollback_lines_summary">מספר השורות לשמירה בהיסטוריית הטרמינל</string>
+    
+    <!-- Interface settings -->
+    <string name="pref_max_tabs">מספר לשוניות מקסימלי</string>
+    <string name="pref_max_tabs_summary">המספר המרבי של לשוניות פתוחות</string>
+    <string name="pref_show_function_keys">הצגת מקשי פונקציה</string>
+    <string name="pref_show_function_keys_summary">הצגת שורת מקשי פונקציה</string>
+    <string name="pref_fullscreen_mode">מסך מלא</string>
+    <string name="pref_fullscreen_mode_summary">הסתרת שורת המצב</string>
+    <string name="pref_keep_screen_on">השאר מסך פועל</string>
+    <string name="pref_keep_screen_on_summary">מניעת כיבוי המסך</string>
+    <string name="accessibility_connection_list">רשימת חיבורים</string>
+    <string name="accessibility_tab_list">רשימת לשוניות</string>
+    <string name="accessibility_function_keys">מקשי פונקציה</string>
+    <string name="accessibility_connected">מחובר</string>
+    <string name="accessibility_disconnected">מנותק</string>
+    <string name="accessibility_connecting">מתחבר</string>
+    
+    <!-- File operations -->
+    <string name="file_browser_title">דפדפן קבצים</string>
+    <string name="local_files">קבצים מקומיים</string>
+    <string name="remote_files">קבצים מרוחקים</string>
+    <string name="upload_file">העלאה</string>
+    <string name="download_file">הורדה</string>
+    <string name="new_folder">תיקייה חדשה</string>
+    <string name="delete_file">מחיקה</string>
+    <string name="rename_file">שינוי שם</string>
+    <string name="file_properties">מאפיינים</string>
+    <string name="transfer_progress">התקדמות העברה</string>
+    <string name="transfer_complete">ההעברה הושלמה</string>
+    <string name="transfer_failed">ההעברה נכשלה</string>
+    
+    <!-- Biometric authentication -->
+    <string name="biometric_title">אימות</string>
+    <string name="biometric_subtitle">השתמש בטביעת אצבע או זיהוי פנים לפתיחה</string>
+    <string name="biometric_description">גישה מאובטחת לסיסמאות השמורות שלך</string>
+    <string name="biometric_negative">ביטול</string>
+    <string name="biometric_error">האימות נכשל - אנא נסה שנית</string>
+    <string name="biometric_not_available">אימות ביומטרי אינו זמין במכשיר זה</string>
+    
+    <!-- About -->
+    <string name="about_version">גרסה</string>
+    <string name="about_build">בילד</string>
+    <string name="about_license">רישיון (MIT)</string>
+    <string name="about_source_code">קוד מקור</string>
+    <string name="about_website">אתר אינטרנט</string>
+    <string name="about_privacy_policy">מדיניות פרטיות</string>
+    <string name="about_open_source_licenses">רישיונות קוד פתוח</string>
+    
+    <!-- Common actions -->
+    <string name="ok">אישור</string>
+    <string name="cancel">ביטול</string>
+    <string name="yes">כן</string>
+    <string name="no">לא</string>
+    <string name="close">סגור</string>
+    <string name="save">שמור</string>
+    <string name="test_button">בדיקה</string>
+    <string name="delete">מחק</string>
+    <string name="edit">ערוך</string>
+    <string name="share">שתף</string>
+    <string name="retry">נסה שנית</string>
+    <string name="dismiss">התעלם</string>
+
+    <!-- Status messages with visual indicators (emojis kept for status) -->
+    <string name="welcome_message">ברוכים הבאים ל-TabSSH!</string>
+    <string name="first_launch_hint">טיפ: צור את החיבור הראשון שלך כדי להתחיל</string>
+    <string name="connecting_to">מתחבר אל %s…</string>
+    <string name="connected_to">✔ מחובר אל %s</string>
+    <string name="disconnected_from">מנותק מ-%s</string>
+    <string name="tab_count">%d לשוניות פתוחות</string>
+    <string name="bytes_transferred">הועברו: %s</string>
+    <string name="session_duration">משך הסשן: %s</string>
+    <string name="fingerprint_verified">✔ מפתח המארח אומת</string>
+    <string name="secure_connection">✔ הוקם חיבור מאובטח</string>
+
+    <!-- Widget -->
+    <string name="widget_description">חיבור מהיר לשרת ה-SSH המועדף עליך</string>
+
+    <!-- Cluster commands -->
+    <string name="cluster_progress">%1$d/%2$d הושלמו (%3$d הצליחו, %4$d נכשלו)</string>
+
+    <!-- Navigation Drawer -->
+    <string name="navigation_drawer_open">פתח מגירת ניווט</string>
+    <string name="navigation_drawer_close">סגור מגירת ניווט</string>
+
+    <!-- Performance Monitor -->
+    <string name="select_connection">בחר חיבור</string>
+    
+    <!-- Widgets -->
+    <string name="widget_1x1_description">סמל חיבור מהיר</string>
+    <string name="widget_2x1_description">פרטי חיבור עם כפתור התחברות</string>
+    <string name="widget_4x2_description">רשימת חיבורים מועדפים</string>
+    <string name="widget_4x4_description">רשימת חיבורים מלאה</string>
+    
+    <string name="sync_password_too_short">מינימום 8 תווים</string>
+    <string name="sync_password_mismatch">הסיסמאות אינן תואמות</string>
+
+    <!-- MDM / Managed App Configuration descriptions (app_restrictions.xml) -->
+    <string name="mdm_desc_audit_enabled">אילץ הפעלה או השבתה של רישום ביקורת (Audit logging). כאשר מוגדר, דורס את העדפת המשתמש באפליקציה.</string>
+    <string name="mdm_desc_audit_log_commands">תעד כל פקודה שהוקלדה במהלך חיבור הטרמינל.</string>
+    <string name="mdm_desc_audit_log_output">תעד את פלט הטרמינל (מגדיל משמעותית את גודל קובץ היומן).</string>
+    <string name="mdm_desc_audit_retention_days">מספר הימים לשמירת רשומות הביקורת לפני מחיקה אוטומטית.</string>
+    <string name="mdm_desc_syslog_host">שם מארח או כתובת IP של מקבל syslog ב-UDP (RFC 5424). השאר ריק כדי להשבית העברה.</string>
+    <string name="mdm_desc_syslog_port">פורט UDP של מקבל ה-syslog.</string>
+</resources>

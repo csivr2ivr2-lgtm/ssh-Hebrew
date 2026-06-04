@@ -1,0 +1,6 @@
+{
+  "name": "TabSSH",
+  "description": "לקוח SSH מודרני מבוסס לשוניות לאנדרואיד, מתורגם לעברית מלאה. TabSSH - Modern tab-based SSH client for Android, translated into Hebrew.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
